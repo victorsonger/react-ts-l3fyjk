@@ -1,0 +1,25 @@
+{
+  "compilerOptions": {
+    "outDir": "./dist/",
+    "sourceMap": true,
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    // "moduleResolution": "Node",
+    // "noImplicitAny": true,
+    "module": "commonjs", // specify module code generation
+    // "target": "esnext", // specify ECMAScript target version
+    "jsx": "react", // use typescript to transpile jsx to js
+    // "target": "es6", // compile to ES2015 (Babel will do the rest)
+    // "jsx": "preserve", // enable JSX mode, but "preserve" tells TypeScript to not transform it (we'll use Babel)
+    "strictNullChecks": true,
+    "noEmit": true, // 不生成文件，只做类型检查
+    // "allowJs": true, // allow a partial TypeScript and JavaScript codebase
+    "baseUrl": "./",
+    "paths": {
+      "@/*": ["."]
+    },
+    "jsxFactory": "React.createElement",
+    "jsxFragmentFactory": "React.Fragment"
+  },
+  "exclude": ["node_modules", "dist", "public", "**/*.spec.ts"]
+}
